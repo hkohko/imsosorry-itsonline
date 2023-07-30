@@ -1,30 +1,25 @@
 from fastapi import APIRouter
 from imsosorry import uwuify
-from pydantic import BaseModel
-from random import random
-
-
-class UwU(BaseModel):
-    text: str
-    cultured: str = "medium"
+from model.datamodels import UwU
+from random import uniform
 
 
 router = APIRouter()
 
 
 @router.post("/uwuify")
-async def ancient_scrolls(text: UwU, culture: str):
+async def ancient_scrolls(uwu: UwU):
     params = {
-        "high": random(0.7, 1.0),
-        "medium": random(0.4, 0.7),
-        "low": random(0.1, 0.4),
+        "high": uniform(0.7, 1.0),
+        "medium": uniform(0.4, 0.7),
+        "low": uniform(0.1, 0.4),
     }
-    if culture in ("high", "medium", "low"):
+    if uwu.uwu_meter in ("high", "medium", "low"):
         uwuified = uwuify(
-            text.text,
-            stutter_strength=params.get(culture),
-            emoji_strength=params.get(culture),
-            tilde_strength=params.get(culture),
+            uwu.text,
+            stutter_strength=params.get(uwu.uwu_meter),
+            emoji_strength=params.get(uwu.uwu_meter),
+            tilde_strength=params.get(uwu.uwu_meter),
         )
         return uwuified
     else:
