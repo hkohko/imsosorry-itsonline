@@ -8,6 +8,3 @@ app = FastAPI()
 
 app.include_router(imsosorry_itsonline.router)
 app.include_router(welcome.router)
-
-if __name__ == "__main__":
-    uvicorn.run("main:app", port=randint(1000, 2000))
