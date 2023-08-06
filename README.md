@@ -1,6 +1,6 @@
 # imsosorry-itsonline
-imsosorry its now accessible through API
-
+imsosorry its now accessible through API  
+**THIS ENTIRE THING ALREADY EXISTS:** [api.letsbuilda.dev](https://github.com/letsbuilda/api.letsbuilda.dev)  
 built on the amazing, legendary, the one and only [imsosorry](https://github.com/letsbuilda/imsosorry)
 
 # How to use  
@@ -53,6 +53,7 @@ for _ in range(3):
 "you a-awe~ the~ c-chosen~ o-onye~ ^^ "
 "you~ a-awe~ t-the~ chosen~ o-onye."
 ```
-Was there any reason for this repo to exist? probably not.  
+W̶a̶s̶ ̶t̶h̶e̶r̶e̶ ̶a̶n̶y̶ ̶r̶e̶a̶s̶o̶n̶ ̶f̶o̶r̶ ̶t̶h̶i̶s̶ ̶r̶e̶p̶o̶ ̶t̶o̶ ̶e̶x̶i̶s̶t̶?̶ ̶p̶r̶o̶b̶a̶b̶l̶y̶ ̶n̶o̶t̶.̶    
+There's even less reason for this to exist now because, it already exists. Still worth it.  
 Was it worth an hour of my weekend? probably not.  
 It's funni tho.
